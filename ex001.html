@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex001</title>
+    <link rel="icon" href="img/manoel-gomes-do-hit-caneta-azul-1572289764651_v2_450x450.jpg.webp">
+</head>
+
+<style>
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+    img {
+        width: 0px;
+    }
+
+
+
+</style>
+
+<body>
+    <h1>Exercício 001</h1>
+
+    <button onclick="botao01() ">Botão 01</button>
+
+    <button onclick="botao02()">Botão 02</button>
+
+    <button onclick="botao03()">Botão 03</button>
+
+    <h1>Exercício 001 - Mudando as cores de fundo</h1>
+
+    <button onclick="azul()">Azul</button>
+
+    <button onclick="vermelho()">Vermelho</button>
+
+    <button onclick="verde()">Verde</button>
+
+    <button id="background-button">Alterar Fundo</button>
+
+    <img id="background-image" src="img/manoel-gomes-do-hit-caneta-azul-1572289764651_v2_450x450.jpg.webp" alt="Imagem de Fundo">
+
+    <h1>Ex 001 - Perguntando o nome</h1>
+
+    <button onclick="Nome()">Qual é o seu nome?</button>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+<script>
+    function botao01() {
+        alert("Você clicou no botão 1!")
+    }
+
+    function botao02() {
+        alert("Você clicou no botão 2!")
+    }
+
+    function botao03() {
+        alert("Você clicou no botão 3!")
+    }
+
+
+    function azul() {
+        document.body.style.backgroundColor = "blue"
+    }
+
+    function vermelho() {
+        document.body.style.backgroundColor = "red"
+    }
+
+    function verde() {
+        document.body.style.backgroundColor = "green"
+    }
+
+    const button = document.querySelector('#background-button');
+button.addEventListener('click', alterarFundo);
+
+function alterarFundo() {
+  const imagemFundo = document.querySelector('#background-image');
+  document.body.style.backgroundImage = `url(${imagemFundo.src})`;
+}
+
+
+function Nome() {
+    prompt("Qual é o seu nome?")
+}
+    
+
+
+
+</script>
+
+
+
+
+
+</html>

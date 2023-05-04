@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex004</title>
+</head>
+
+<style>
+    body {
+        background-image: url(img/pxfuel.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+    h1 {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 70px;
+    }
+
+    button {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: black;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 15px;
+        box-shadow: 0 0 20px black;
+        transform: scale(1.1);
+        transition-duration: 0.5s;
+    }
+
+    P {
+        color: black;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 1.1vw;
+    }
+</style>
+<body>
+    <h1>Visit log</h1>
+
+    <button onclick="Registro()">Register</button>
+
+    <p id="resultado">Registered people...</p>
+
+
+    
+</body>
+
+<script>
+    function Registro() {
+        var name1 = prompt("Digite seu nome")
+
+        name1 = String(name1)
+        
+        var adicionado = name1
+
+        //alert(adding)
+
+        document.getElementById("resultado").innerHTML +=
+            `<br>&#x1f596 <strong>${name1}</strong> has been Registered`
+
+    }
+</script>
+</html>

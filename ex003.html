@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex003</title>
+    <link rel="icon" href="img/manoel-gomes-do-hit-caneta-azul-1572289764651_v2_450x450.jpg.webp">
+</head>
+
+<style>
+    body {
+        background-image: url(img/2923756.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: right;
+    }
+
+    h1 {
+        margin-top: 10vh;
+        font-size: 50px;
+    }
+
+    .float {
+        margin-right: 10vw;
+    }
+
+    button{
+        margin-left: 9.3vw;
+        padding: 20px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    button:hover{
+        margin-left: 9.3vw;
+        padding: 20px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        font-size: 15px;
+        box-shadow: 0 0 20px black;
+        transform: scale(1.1);
+        ;
+    }
+
+</style>
+
+<body>
+
+    <h1 class="float">Somador de números</h1>
+
+    <button onclick="Botaosomar()" class="float">Clique para somar</button>
+
+</body>
+
+<script>
+    function Botaosomar() {
+        var n1 = prompt("Digite um número")
+
+        var n2 = prompt("Digite outro número")
+
+        n1 = Number (n1)
+
+        n2 = Number (n2)
+
+        var soma = n1 + n2
+
+        console.log(soma)
+        
+
+    }
+
+</script>
+
+</html>
