@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teoria JavaScript</title>
     <link rel="icon" href="img/manoel-gomes-do-hit-caneta-azul-1572289764651_v2_450x450.jpg.webp">
-    <script src="teoria.js"></script>
+    <script defer src="/js/teoria.js"></script>
 </head>
 
 <style>
@@ -163,6 +163,25 @@ function botaosomar() {
    var soma = num1 + num2
 
    document.getElementById("res-soma").innerHTML = soma
+}
+
+//Operadores Lógicos
+//&& representa E
+var login = "admin"
+var senha = "123"
+//Para entrar na condição TRUE as 2 condições precisar ser verdadeira
+if (login == "admin" && senha == "123") {
+   //Executar esse bloco quando as condições são TRUE
+} else {
+   //Executar esse bloco se pelo menos 1 condição for FALSE
+}
+
+var media = 6
+
+// Opeador OU -> II (pipe)
+//Para entrar na condição TRUE pelo menos 1 condição precisa ser verdadeira
+if (media == 6 II media == 5) {
+   // Executa esse bloco quando 1 
 }
 
 

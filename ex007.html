@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex007</title>
+    <link rel="stylesheet" href="/css/ex007.css">
+    <script defer src="/js/ex007.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>electronic scoreboard</h1>
+    </header>
+
+    <main>
+
+        <div class="contair">
+
+            <div class="team1">
+                <p>Time 1</p>
+                <h2 id="pt1">0</h2>
+                <button onclick="Point1()">Point</button>
+            </div>
+
+            <div class="middle">
+
+                <div class="versus">
+                    <h2>X</h2>
+                </div>
+
+                <div class="clear">
+                    <button onclick="clearResults()" class="clear">Clear</button>
+                </div>
+
+            </div>
+
+            <div class="team2">
+                <p>Time 2</p>
+                <h2 id="pt2">0</h2>
+                <button onclick="Point2()">Point</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

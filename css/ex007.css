@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: rgb(72, 72, 255);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+header {
+    margin-bottom: 3%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contair {
+    background-color: white;
+    width: 50vw;
+    height: 60vh;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5%;
+    box-shadow: 2px 5px 5px;
+}
+
+main > .contair > input {
+    margin-top: 2vw;
+}
+
+.teams {
+    display: flex;
+    justify-content:space-around;
+    margin-top: 3vw;
+}
+
+.team1 {
+    margin-top: 115px;
+    margin-left: 25px;
+}
+
+.team2 {
+    margin-top:115px ;
+    margin-right: 25px;
+}
+
+.team1 > p {
+    background-color: rgb(72, 72, 255);
+    color: white;
+    width: 12vw;
+    padding: 5px;
+}
+
+.team2 > p {
+    background-color: rgb(72, 72, 255);
+    color: white;
+    width: 12vw;
+    padding: 5px;
+}
+
+.team1 > h2 {
+    color: red;
+    font-size: 5vw;
+}
+
+.team2 > h2 {
+    color: red;
+    font-size: 5vw;
+}
+
+
+.point {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team1 > button {
+    background-color: rgb(72, 72, 255);
+    padding: 0.7vw;
+    width: 8vw;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px black;
+}
+
+.team1 > button:hover {
+    background-color: rgb(72, 72, 255);
+    padding: 0.7vw;
+    width: 8vw;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px black;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.team2 > button {
+    background-color: rgb(72, 72, 255);
+    padding: 0.7vw;
+    width: 8vw;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px black;
+}
+
+.team2 > button:hover {
+    background-color: rgb(72, 72, 255);
+    padding: 0.7vw;
+    width: 8vw;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px black;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.versus {
+    display: flex;
+    align-items: center;
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: rgb(72, 72, 255);
+    margin-top: 140%;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clear {
+    padding: 9px;
+    color: white;
+}
+
+.clear > button {
+    background-color: rgb(72, 72, 255);
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+}
+
+.clear > button:hover {
+    background-color: rgb(72, 72, 255);
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+footer {
+
+}
